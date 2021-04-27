@@ -7,7 +7,7 @@ from scipy import stats
 import seaborn as sns; sns.set()
 
 #In[2]
-from sklearn.datasets.samples_generator import make_blobs
+from sklearn.datasets import make_blobs
 X, y = make_blobs(n_samples=50, centers=2,
                   random_state=0, cluster_std=0.60)
 plt.scatter(X[:, 0], X[:, 1], c=y, s=50, cmap='autumn');
@@ -105,7 +105,7 @@ interact(plot_svm, N=[10, 200], ax=fixed(None));
 plt.show()
 
 #In[11]
-from sklearn.datasets.samples_generator import make_circles
+from sklearn.datasets import make_circles
 X, y = make_circles(100, factor=.1, noise=.1)
 
 clf = SVC(kernel='linear').fit(X, y)
