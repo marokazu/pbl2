@@ -7,6 +7,6 @@ from matplotlib import pyplot as plt
 
 
 image = np.array(Image.open("cat.jpg"))
-
+print(image)
 plt.imshow(image)
 plt.show()

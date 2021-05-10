@@ -29,3 +29,7 @@ for row in reader:
 
 
 #それぞれの変数をprintしてもらう
+print(x_name)
+for i in x:
+    print(i)
+print(y)
