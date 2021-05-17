@@ -4,6 +4,7 @@ import numpy as np
 from sklearn import linear_model
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
+np.set_printoptions(threshold=np.inf)
 # データの読み込み
 df = pd.read_csv("rent.csv", encoding="shift-jis")
 y_table = df["家賃"]
@@ -20,5 +21,4 @@ model.fit(x_train, y_train)
 y_pred = model.predict(x_test)
 # 精度の検証
 print("ROOT MEAN SQUARED ERROR")
-print(mean_squared_error(y_test, y_pred))
 print(np.sqrt(mean_squared_error(y_test, y_pred)))
