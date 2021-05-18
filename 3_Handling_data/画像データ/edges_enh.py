@@ -16,4 +16,4 @@ dst = cv2.filter2D(image_n,-1,kernel)
 
 plt.imshow(dst)
 plt.show()
-cv2.imwrite("cat_edge_con.jpg", dst)
+cv2.imwrite("cat_edge_con_noise.jpg", dst)

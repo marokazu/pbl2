@@ -11,14 +11,14 @@ tmp = []
 x = []
 y = []
 for row in reader:
-    if i == 0:  # カラムの読み込み
+    if i == 0:#カラムの読み込み
         for j in range(len(row)):
             if row[j] == y_name:
                 y_id = j
             elif row[j] != y_name:
                 x_name.append(row[j])
-        i = 1
-    elif i != 0:  # データの読み込み
+        i=1
+    elif i != 0:#データの読み込み
         for j in range(len(row)):
             if j == y_id:
                 y.append(int(row[j]))
@@ -28,7 +28,7 @@ for row in reader:
         tmp = []
 
 
-# それぞれの変数をprintしてもらう
+#それぞれの変数をprintしてもらう
 print(x_name)
 for i in x:
     print(i)

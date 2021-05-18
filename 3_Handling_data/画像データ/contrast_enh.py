@@ -6,7 +6,7 @@ from matplotlib import pyplot as plt
 
 image = np.array(Image.open("cat.jpg"))
 alpha = 1.5#要調整
-beta = 30.0#要調整
+beta = 100.0#要調整
 con = image*alpha+beta 
 on = np.clip(con,0,255).astype(np.uint8)
 
