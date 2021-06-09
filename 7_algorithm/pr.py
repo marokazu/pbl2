@@ -15,7 +15,7 @@ from sklearn import linear_model
 model = linear_model.LinearRegression()
 
 # 学習
-
+"学習"
 
 # モデル
 a = model.coef_  # 重み
@@ -31,7 +31,7 @@ s = np.linalg.inv(np.dot(x.T, x))
 stder = np.sqrt(np.diagonal(se*s))
 
 # t 値を算出
-t = "回帰係数"/stder
+"t"
 
 # 出力
 out = {}
