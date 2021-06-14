@@ -30,9 +30,9 @@ print("reliability : ")
 
 # 信頼度の計算
 smvalue = np.array(model.predict_proba(X_test))
-for i in range(len(y_test)):
-    if y_test[i] != y_pred[i]:
-        print(" num : ", i)
-        print(" y_test : ", y_test[i])
-        print(" y_pred : ", y_pred[i])
-        print(" Softmax : ", max(smvalue[i]), "\n")
+
+
+print(" num : ")
+print(" y_test : ")
+print(" y_pred : ")
+print(" Softmax : ")
