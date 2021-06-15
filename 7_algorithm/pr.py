@@ -4,25 +4,25 @@ import numpy
 from sklearn import linear_model
 
 # データの読み込み
-"df"
-"y_table"
-"x_table"
-"y"
-"x"
-"name"
+'df'
+'y_table'
+'x_table'
+'y'
+'x'
+'name'
 
 # モデルの定義
 model = linear_model.LinearRegression()
 
 # 学習
-"学習"
+'学習'
 
 # モデル
 a = model.coef_  # 重み
 b = model.intercept_  # 切片
 
 # 予測値の生成
-"y_pred"
+'y_pred'
 
 # 標準誤差を算出
 se = np.sum((y-y_pred)**2, axis=0)
@@ -31,7 +31,7 @@ s = np.linalg.inv(np.dot(x.T, x))
 stder = np.sqrt(np.diagonal(se*s))
 
 # t 値を算出
-"t"
+'t'
 
 # 出力
 out = {}

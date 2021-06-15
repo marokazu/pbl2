@@ -31,7 +31,7 @@ print("reliability : ")
 # 信頼度の計算
 smvalue = np.array(model.predict_proba(X_test))
 
-
+# 不正解データの出力
 print(" num : ")
 print(" y_test : ")
 print(" y_pred : ")
