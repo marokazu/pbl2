@@ -1,7 +1,4 @@
-import matplotlib.pyplot as plt
-import numpy as np
 from sklearn.datasets import make_blobs
-from sklearn import preprocessing
 from sklearn.cluster import KMeans
 from sklearn.svm import LinearSVC
 
@@ -32,6 +29,5 @@ plt.show()
 model=LinearSVC()
 
 #学習
-model.fit(Xdata,y_kmeans)
 
 #決定境界の可視化
